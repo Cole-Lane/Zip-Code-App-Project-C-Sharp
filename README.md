@@ -1,7 +1,5 @@
 # Zip Code App
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 GUI that allows the user to enter a 5 digit US zip code and then returns the city and state for that zip code.
 
 ## Table of Contents
@@ -9,7 +7,6 @@ GUI that allows the user to enter a 5 digit US zip code and then returns the cit
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 
 ## Features
 
@@ -58,10 +55,6 @@ The ZippoProcessor class makes use of the two NuGets, Newtonsoft.Json and System
 
 The ApiHelper class is a simple helper class that starts a new instance of HttpClient and sets the base address to insure that we are looking for US zip codes.
 
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). 
 
 ## Authors
 
