@@ -25,7 +25,10 @@ GUI that allows the user to enter a 5 digit US zip code and then returns the cit
 
 ## Installation
 
+<h3>Opening and using via <a href="https://learn.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022">Microsoft Visual Studio</a> is preffered.</h3>
+
 **This is targeted for a Windows desktop.**
+
 
 Uses the following NuGets:
 
@@ -33,13 +36,12 @@ Newtonsoft.Json
 
 System.Net.Http
 
-[Using Visual Studio](https://learn.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022)
 
 ```bash
 # Example installation steps
 $ git clone https://github.com/Cole-Lane/Zip-Code-App-Project-C-Sharp.git
-$ cd repository
-$ npm install
+$ cd /Zip-Code-App-Project-C-Sharp
+$ dotnet build
 ```
 
 ## Usage
@@ -48,7 +50,7 @@ Explain how to use the project, providing examples or code snippets if applicabl
 
 ```bash
 # Example usage
-$ npm start
+$ dotnet run
 ```
 
 ## License
