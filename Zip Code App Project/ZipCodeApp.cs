@@ -42,7 +42,7 @@ namespace Zip_Code_App_Project
             // show easy to understand error to the user
             catch
             {
-                MessageBox.Show("Please enter a valid US zip code.");
+                MessageBox.Show("Please enter a valid US zip code.\nMake sure there is no letters or white space.");
             }
         }
 
