@@ -22,7 +22,7 @@ GUI that allows the user to enter a 5 digit US zip code and then returns the cit
 
 ## Installation
 
-<h3>Opening and using via <a href="https://learn.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022">Microsoft Visual Studio</a> is preffered.</h3>
+<h3>Opening and using via <a href="https://learn.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022">Microsoft Visual Studio</a> is preferred.</h3>
 
 **This is targeted for a Windows desktop.**
 
@@ -41,6 +41,7 @@ System.Net.Http
 - On the start window, select Clone a repository.
 - Paste or type the repository location, and click the Clone button.
 - Visual Studio will load the solution from the repository by using the Folder View in the Solution Explorer.
+- Double-click on the Zip Code App Project.sln to navigate the project
 ```
 
 ## Usage
@@ -48,17 +49,38 @@ System.Net.Http
 Run / Start the application in Visual Studio and the GUI window will appear.
 Just enter a 5 digit zip code and press enter to have the city and state load in the text boxes.
 
-The main file runs an instance of the *ZipCodeApp* class
--This class has the listeners and is the file that makes a call to the *ZippoProcessor* class
+<h3>Program.cs</h3>
+Runs an instance of the ZipCodeApp class
 
-The *ZippoProcessor* class makes use of the two NuGets, Newtonsoft.Json and System.Net.Http to handle the data returned from the *ApiHelper* class. This data is then matched to two seperate classes, *ZipModel* and *LocationInformation*, to handle the data format.
+<h3>ZipCodeApp.Designer.cs</h3>
+This is the front end design code for the GUI.
 
-The *ApiHelper* class is a simple helper class that starts a new instance of HttpClient and sets the base address to insure that we are looking for US zip codes.
+<h3>ZipCodeApp.cs</h3>
+This class has the listeners for the buttons and text boxes in the GUI.
 
+Helper functions to aid with removing text from the text boxes.
+
+Makes a call to the ZippoProcessor class with the text from the zip code text box.
+
+<h3>ZippoProcessor.cs</h3>
+The ZippoProcessor class makes use of the two NuGets, Newtonsoft.Json and System.Net.Http to handle the data returned from the ApiHelper class. 
+
+This data is then matched to two seperate classes, ZipModel and LocationInformation, to handle the data format.
+
+<h3>ApiHelper.cs</h3>
+The ApiHelper class is a simple helper class that starts a new instance of HttpClient and sets the base address to insure that we are looking for US zip codes.
+
+<h3>ZipModel.cs</h3>
+This class matches the first layer of data returned from the zippopotam.us API
+
+Passes layer of info to the LocationInformation class
+
+<h3>LocationInformation.cs</h3>
+Matches string data returned from the zippopotam.us API for the "places" object. 
 
 ## Authors
 
-List the authors or contributors of the project and provide links to their profiles or contact information.
+Cole Lane
 
 ## Resources
 
