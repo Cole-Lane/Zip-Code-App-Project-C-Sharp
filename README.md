@@ -41,6 +41,7 @@ System.Net.Http
 - On the start window, select Clone a repository.
 - Paste or type the repository location, and click the Clone button.
 - Visual Studio will load the solution from the repository by using the Folder View in the Solution Explorer.
+- Double-click on the Zip Code App Project.sln to navigate the project
 ```
 
 ## Usage
