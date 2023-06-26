@@ -33,9 +33,11 @@ Newtonsoft.Json
 
 System.Net.Http
 
+[Using Visual Studio](https://learn.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022)
+
 ```bash
 # Example installation steps
-$ git clone https://github.com/username/repository.git
+$ git clone https://github.com/Cole-Lane/Zip-Code-App-Project-C-Sharp.git
 $ cd repository
 $ npm install
 ```
