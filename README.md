@@ -49,17 +49,38 @@ System.Net.Http
 Run / Start the application in Visual Studio and the GUI window will appear.
 Just enter a 5 digit zip code and press enter to have the city and state load in the text boxes.
 
-The main file runs an instance of the *ZipCodeApp* class
--This class has the listeners and is the file that makes a call to the *ZippoProcessor* class
+<h4>Program.cs</h4>
+Runs an instance of the ZipCodeApp class
 
-The *ZippoProcessor* class makes use of the two NuGets, Newtonsoft.Json and System.Net.Http to handle the data returned from the *ApiHelper* class. This data is then matched to two seperate classes, *ZipModel* and *LocationInformation*, to handle the data format.
+<h4>ZipCodeApp.Designer.cs</h4>
+This is the front end design code for the GUI.
 
-The *ApiHelper* class is a simple helper class that starts a new instance of HttpClient and sets the base address to insure that we are looking for US zip codes.
+<h4>ZipCodeApp.cs</h4>
+This class has the listeners for the buttons and text boxes in the GUI.
 
+Helper functions to aid with removing text from the text boxes.
+
+Makes a call to the ZippoProcessor class with the text from the zip code text box.
+
+<h4>ZippoProcessor.cs</h4>
+The ZippoProcessor class makes use of the two NuGets, Newtonsoft.Json and System.Net.Http to handle the data returned from the ApiHelper class. 
+
+This data is then matched to two seperate classes, ZipModel and LocationInformation, to handle the data format.
+
+<h4>ApiHelper.cs</h4>
+The ApiHelper class is a simple helper class that starts a new instance of HttpClient and sets the base address to insure that we are looking for US zip codes.
+
+<h4>ZipModel.cs</h4>
+This class matches the first layer of data returned from the zippopotam.us API
+
+Passes layer of info to the LocationInformation class
+
+<h4>LocationInformation.cs</h4>
+Matches string data returned from the zippopotam.us API for the "places" object. 
 
 ## Authors
 
-List the authors or contributors of the project and provide links to their profiles or contact information.
+Cole Lane
 
 ## Resources
 
