@@ -22,7 +22,7 @@ GUI that allows the user to enter a 5 digit US zip code and then returns the cit
 
 ## Installation
 
-<h3>Opening and using via <a href="https://learn.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022">Microsoft Visual Studio</a> is preffered.</h3>
+<h3>Opening and using via <a href="https://learn.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022">Microsoft Visual Studio</a> is preferred.</h3>
 
 **This is targeted for a Windows desktop.**
 
