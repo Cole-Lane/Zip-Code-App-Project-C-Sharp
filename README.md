@@ -38,20 +38,26 @@ System.Net.Http
 
 
 ```bash
-# Example installation steps
-$ git clone https://github.com/Cole-Lane/Zip-Code-App-Project-C-Sharp.git
-$ cd /Zip-Code-App-Project-C-Sharp
-$ dotnet build
+# How to run via Visual Studio
+# Since this a forms project, I do not reccommend trying to build and run from the command line.
+- Open Visual Studio.
+- On the start window, select Clone a repository.
+- Paste or type the repository location, and click the Clone button.
+- Visual Studio will load the solution from the repository by using the Folder View in the Solution Explorer.
 ```
 
 ## Usage
 
-Explain how to use the project, providing examples or code snippets if applicable. This section should guide users through the main functionalities and demonstrate how they can interact with the project.
+Run / Start the application and the GUI window will appear.
+Just enter a 5 digit zip code and press enter to have the city and state load in the text boxes.
 
-```bash
-# Example usage
-$ dotnet run
-```
+The main file runs an instance of the ZipCodeApp class
+-This class has the listeners and is the file that makes a call to the ZippoProcessor class
+
+The ZippoProcessor class makes use of the two NuGets, Newtonsoft.Json and System.Net.Http to handle the data returned from the ApiHelper class. This data is then matched to two seperate classes, ZipModel and LocationInformation, to handle the data format.
+
+The ApiHelper class is a simple helper class that starts a new instance of HttpClient and sets the base address to insure that we are looking for US zip codes.
+
 
 ## License
 
