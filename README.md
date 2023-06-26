@@ -71,7 +71,7 @@ Makes a call to the ZippoProcessor class with the text from the zip code text bo
 
 The ZippoProcessor class makes use of the two NuGets, Newtonsoft.Json and System.Net.Http to handle the data returned from the ApiHelper class. 
 
-This data is then matched to two seperate classes, ZipModel and LocationInformation, to handle the data format.
+This data is then matched to two separate classes, ZipModel and LocationInformation, to handle the data format.
 
 <h3>ApiHelper.cs</h3>
 The ApiHelper class is a simple helper class that starts a new instance of HttpClient and sets the base address to ensure that we are looking for US zip codes.
